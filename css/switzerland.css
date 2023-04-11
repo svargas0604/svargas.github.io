@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Didact+Gothic&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+body {
+    font-family: "Playfair Display", "Georgia", "Times New Roman", serif;
+    background-color: rgb(240,236,232);
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+    "headline headline headline"
+    "navigation introduction ."
+    ". ppl ."
+    ". geog ."
+    ". govern ."
+    "end end end";
+    grid-gap: 30px;
+    box-sizing: border-box;
+    max-width: 950px;
+    margin: auto;
+}
+#gov {
+    grid-area: govern;
+    background-color: rgba(91,82,76,0.3);
+    padding: 20px 60px;
+    margin: 20px 0 0 0;
+    border: 2px solid rgb(91,82,76);
+    max-height: 500px;
+    overflow: scroll;
+
+}
+
+#people {
+    grid-area: ppl;
+    background-color: rgba(91,82,76,0.3);
+    padding: 20px 60px;
+    margin: 20px 0;
+    border: 2px solid rgb(91,82,76);
+    max-height: 500px;
+    overflow: scroll;
+}
+
+#intro {
+    grid-area: introduction;
+    background-color: rgba(91,82,76,0.3);
+    padding: 20px 60px;
+    margin: 0 0 20px 0;
+    border: 2px solid rgb(91,82,76);
+    max-height: 500px;
+    overflow: scroll;
+}
+
+#geo {
+    grid-area: geog;
+    background-color: rgba(91,82,76,0.3);
+    padding: 20px 60px;
+    margin: 20px 0;
+    border: 2px solid rgb(91,82,76);
+    max-height: 500px;
+    overflow: scroll;
+}
+
+header {
+    grid-area: headline;
+    font-family: "Delicious Handrawn", "Playfair Default", "Georgia", serif;
+    font-size: 20px;
+    color: rgb(41,41,41);
+    background-color: rgba(91,82,76,0.3);
+    padding: 10px 20px;
+    border: 2px solid rgb(91,82,76);
+}
+
+h2 {
+    color:rgb(41,41,41);
+}
+
+h3 {
+    color: rgb(60,59,57)
+}
+#topnav {
+    grid-area: navigation;
+    background-color: rgba(91,82,76,0.3);
+    border: 2px solid rgb(91,82,76);
+    padding: 10px 10px;
+    text-align: left;
+    
+}
+
+footer {
+    grid-area: end;
+    background-color: rgba(91,82,76,0.3);
+    border: thin solid rgb(91,82,76);
+    margin: 0;
+}
+
+article {
+    background-color: rgba(91,82,76,0.3);
+    padding: 20px 30px;
+    margin: 20px 0;
+}
+
+table {
+    border: thin solid #222;
+    margin: auto;
+}
+
+th,
+td {
+    border: thin solid #222;
+    margin: auto;
+    padding: 3px;
+}
+
+figure {
+    margin: auto;
+    padding: 10px;
+}
+
+
+
+figcaption {
+    font-size: 12px;
+}
+
+a:link {
+    color: #333;
+}
+
+a:visited {
+    color: rgb(96, 74, 114);
+}
+
+a:hover {
+    color: rgb(229, 218, 245);
+}
+
+a:active {
+    color: rgb(155,241, 142);
+}
