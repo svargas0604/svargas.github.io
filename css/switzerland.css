@@ -5,19 +5,20 @@ body {
     background-color: rgb(240,236,232);
     line-height: 1.5;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 3fr;
     grid-template-areas:
-    "headline headline headline"
-    "navigation introduction ."
-    ". ppl ."
-    ". geog ."
-    ". govern ."
-    "end end end";
+    "headline headline"
+    "navigation introduction"
+    ". ppl"
+    ". geog"
+    ". govern"
+    "end end";
     grid-gap: 30px;
     box-sizing: border-box;
     max-width: 950px;
     margin: auto;
 }
+
 #gov {
     grid-area: govern;
     background-color: rgba(91,82,76,0.3);
@@ -80,9 +81,8 @@ h3 {
     grid-area: navigation;
     background-color: rgba(91,82,76,0.3);
     border: 2px solid rgb(91,82,76);
-    padding: 10px 10px;
+    padding: 20px 10px;
     text-align: left;
-    
 }
 
 footer {
