@@ -4,14 +4,15 @@ body {
     font-family: "Playfair Display", "Georgia", "Times New Roman", serif;
     background-color: rgb(240,236,232);
     line-height: 1.5;
+}
+
+main {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-areas:
-    "headline headline"
-    "navigation introduction"
-    ". ppl"
-    ". geog"
-    ". govern"
+    "ppl ppl"
+    "geog geog"
+    "govern govern"
     "end end";
     grid-gap: 30px;
     box-sizing: border-box;
@@ -23,18 +24,17 @@ body {
     grid-area: govern;
     background-color: rgba(91,82,76,0.3);
     padding: 20px 60px;
-    margin: 20px 0 0 0;
+    margin: 0;
     border: 2px solid rgb(91,82,76);
     max-height: 500px;
     overflow: scroll;
-
 }
 
 #people {
     grid-area: ppl;
     background-color: rgba(91,82,76,0.3);
     padding: 20px 60px;
-    margin: 20px 0;
+    margin: 30px 0 0 0;
     border: 2px solid rgb(91,82,76);
     max-height: 500px;
     overflow: scroll;
@@ -44,7 +44,7 @@ body {
     grid-area: introduction;
     background-color: rgba(91,82,76,0.3);
     padding: 20px 60px;
-    margin: 0 0 20px 0;
+    margin: 0 0 0 20px;
     border: 2px solid rgb(91,82,76);
     max-height: 500px;
     overflow: scroll;
@@ -54,20 +54,54 @@ body {
     grid-area: geog;
     background-color: rgba(91,82,76,0.3);
     padding: 20px 60px;
-    margin: 20px 0;
+    margin: 0;
     border: 2px solid rgb(91,82,76);
     max-height: 500px;
     overflow: scroll;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "woop woop"
+    "one pic"
+    "two two"
+    "three three";
 }
 
-header {
+#heado {
+    grid-area: woop;
+}
+#loc {
+    grid-area: one;
+}
+
+#cli {
+    grid-area: two;
+}
+
+#lake {
+    grid-area:three;
+}
+
+
+h1 {
     grid-area: headline;
     font-family: "Delicious Handrawn", "Playfair Default", "Georgia", serif;
-    font-size: 20px;
+    font-size: 40px;
     color: rgb(41,41,41);
     background-color: rgba(91,82,76,0.3);
     padding: 10px 20px;
     border: 2px solid rgb(91,82,76);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+    "headline headline"
+    "navigation introduction";
+    box-sizing: border-box;
+    max-width: 950px;
+    margin: auto;
 }
 
 h2 {
@@ -77,6 +111,7 @@ h2 {
 h3 {
     color: rgb(60,59,57)
 }
+
 #topnav {
     grid-area: navigation;
     background-color: rgba(91,82,76,0.3);
@@ -89,12 +124,13 @@ footer {
     grid-area: end;
     background-color: rgba(91,82,76,0.3);
     border: thin solid rgb(91,82,76);
-    margin: 0;
+    margin: auto;
+    max-width: 950px;
 }
 
 article {
     background-color: rgba(91,82,76,0.3);
-    padding: 20px 30px;
+    padding: 20px 30px 30px 30px;
     margin: 20px 0;
 }
 
@@ -114,8 +150,6 @@ figure {
     margin: auto;
     padding: 10px;
 }
-
-
 
 figcaption {
     font-size: 12px;
@@ -138,7 +172,8 @@ a:active {
 }
 
 #mount {
+    grid-area: pic;
     background-color: rgba(91,82,76,0.3);
     padding: 20px 30px;
-    margin: auto;
+    margin: 20px 0 20px 20px;
 }
