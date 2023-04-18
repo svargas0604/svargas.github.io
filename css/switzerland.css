@@ -69,17 +69,21 @@ main {
 
 #heado {
     grid-area: woop;
+    margin: 10px 0;
 }
 #loc {
     grid-area: one;
+    margin: 10px 0;
 }
 
 #cli {
     grid-area: two;
+    margin: 10px 0;
 }
 
 #lake {
     grid-area:three;
+    margin: 10px 0;
 }
 
 
@@ -175,5 +179,5 @@ a:active {
     grid-area: pic;
     background-color: rgba(91,82,76,0.3);
     padding: 20px 30px;
-    margin: 20px 0 20px 20px;
+    margin: 10px 0 10px 20px;
 }
